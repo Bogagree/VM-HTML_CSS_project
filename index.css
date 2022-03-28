@@ -1,0 +1,19 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  font-size: 16px;
+  font-family: "roboto";
+  font-weight: 400;
+}
+.info-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.info-text h1 {
+  font-family: "Lobster";
+  font-size: 50px;
+}
