@@ -1,19 +1,269 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 
-body {
-  font-size: 16px;
-  font-family: "roboto";
-  font-weight: 400;
+* {
+  margin: 0px;
+  padding: 0px;
 }
-.info-text p {
-  font-style: normal;
-  font-weight: 400;
+
+.container {
+  width: 800px;
+  margin: auto;
+  padding-top: 30px;
+}
+
+body {
+  margin: auto;
   font-size: 16px;
+  font-family: "roboto", sans-serif;
+  font-weight: normal;
+  background-color: #f1f1f1;
+  color: #0f141e;
+}
+
+.avatar {
+  width: 200px;
+  border-radius: 28px;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.5);
+}
+
+.card {
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.info {
+  margin-bottom: 20px;
+  display: flex;
+}
+
+@media (max-width: 650px) {
+  .info {
+    display: block;
+        text-align: center;
+        margin-left: auto;
+  margin-right: auto;
+      }
+  }
+
+.container-1 {
+  margin-left: 40px;
+}
+
+.name-surname {
+  margin: 20px 0px 10px;
+  color: #9765c5;
+}
+
+.university {
+  /* display: block; */
+  margin: 5px 0px 15px;
+  color: #9765c5;
+}
+
+.university h2 {
+  padding-bottom: 3px;
+  font-size: 22px;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: normal;
+  background: #fff;
+  border-radius: 10px;
+  color: #312f2f;
+  border-left: 6px solid #9765c5;
 }
 
 .info-text h1 {
-  font-family: "Lobster";
-  font-size: 50px;
+  font-family: "Roboto";
+  font-size: 30px;
 }
+
+.info h3 {
+  font-family: "Roboto";
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.social-media {
+  /* border-left: 6px solid   #ffbd30; */
+  border-left: 6px solid #ffbd30;
+  background: #fff;
+  padding-left: 20px;
+  color: #9765c5;
+}
+
+.hobby {
+  border-left: 6px solid #9765c5;
+  background: #ffffff;
+  color: #9765c5;
+}
+
+.experience {
+  border-left: 6px solid #9765c5;
+  background: #ffffff;
+  padding-left: 20px;
+  color: #9765c5;
+}
+
+.experience td {
+  color: #312f2f;
+}
+
+.courses {
+  border-left: 6px solid #9765c5;
+  padding: 20px;
+  color: #9765c5;
+  background: #fff;
+}
+
+.courses ul {
+  padding-left: 20px;
+  color: #312f2f;
+}
+
+.courses li {
+  margin-bottom: 10px;
+}
+
+a {
+  /* background-color: white;
+  color: black;
+  border: 5px solid rgb(53, 117, 53);
+  border-radius: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: ruby-base; */
+  color: rgb(22, 87, 9);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ffbd30;
+}
+
+a:active {
+  color: #9765c5;
+}
+
+.btn {
+  background: #9765c5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+.hobby-list {
+  padding: 0 20px;
+}
+
+.hobby-list li {
+  color: #312f2f;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #312f2f;
+  padding-bottom: 2px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.table td:hover {
+  background: #9765c5;
+}
+
+.table td:nth-child(1) {
+  color: #111;
+  font-weight: 600;
+}
+
+.form h2 {
+  text-align: center;
+  color: #9765c5;
+}
+
+.form-row {
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.form-group {
+  margin-left: 10px;
+  margin-top: 10px;
+ }
+
+.form-row .form-group {
+  /* display: inline-block;
+  width: calc(50% - 20px); */
+  width: 45%;
+  /* margin-top: 10px; */
+  margin-right: 20px;
+  /* margin-left: 10px; */
+  }
+
+  @media (max-width: 650px) {
+    .form-row {
+      display: block;
+    }
+
+    .form-row .form-group {
+      width: 100%;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+    }
+
+    .btn {
+      display: block;
+  margin-left: 10px;
+  margin-right: auto;
+    }
+  }
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #312f2f;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
